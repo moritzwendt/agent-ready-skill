@@ -1,0 +1,24 @@
+{
+  "name": "agent-ready-skill",
+  "owner": {
+    "name": "Moritz Wendt"
+  },
+  "metadata": {
+    "description": "Make your repository agent ready.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "agent-ready",
+      "description": "Sets up and maintains documentation that AI coding agents read at the start of every session and keep current while they work.",
+      "version": "0.1.0",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/agent-ready"],
+      "license": "MIT",
+      "homepage": "https://github.com/moritzwendt/agent-ready-skill",
+      "repository": "https://github.com/moritzwendt/agent-ready-skill",
+      "keywords": ["agents-md", "documentation", "claude-md", "onboarding", "git-workflow", "roadmap", "changelog"]
+    }
+  ]
+}
