@@ -1,0 +1,48 @@
+name: Bug report
+description: The skill did something wrong or unexpected
+labels: ["bug"]
+body:
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      placeholder: Claude Code 2.1.294
+    validations:
+      required: true
+  - type: input
+    id: skill-version
+    attributes:
+      label: agent-ready version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: state
+    attributes:
+      label: Repository state before running the skill
+      options:
+        - Empty
+        - Only a README with an idea
+        - Code without docs
+        - Code with some docs or agent instruction files
+        - Already set up with agent-ready
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Relevant part of the conversation
+      description: Remove anything private before posting.
+      render: text
